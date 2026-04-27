@@ -1,5 +1,4 @@
-#احبك ♡ ^_^
-heart_vertical = [
+local heart_vertical = {
     "   11     11   ",
     "  1111   1111  ",
     " 111111 111111 ",
@@ -12,7 +11,8 @@ heart_vertical = [
     "     11111     ",
     "      111      ",
     "       1       "
-]
+}
 
-for row in heart_vertical:
-    print(row.center(20)) 
+for _, row in ipairs(heart_vertical) do
+    print(row)
+end
